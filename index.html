@@ -299,15 +299,24 @@
         <form action="https://formspree.io/f/xwkajypj" id="form" method="post">
           <input
             name="Name"
-            id="Name"
+            id="FirstName"
             type="text"
-            placeholder="Full Name"
+            placeholder="First Name"
             maxlength="30"
-          /><br />
+            required
+          />
+          <input
+            name="Last Name"
+            id="LastName"
+            type="text"
+            placeholder="Last Name"
+            maxlength="30"
+            required
+          />
           <input
             name="Email"
             id="email"
-            type="text"
+            type="email"
             required
             placeholder="Email address"
           /><br />
@@ -318,6 +327,7 @@
             rows="10"
             maxlength="500"
             placeholder="Your Message"
+            required
           ></textarea
           ><br />
           <button type="submit" class="submitButton">Get in touch</button>

@@ -353,16 +353,24 @@ form {
   margin-left: 24px;
   margin-right: 24px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 form input {
   padding: 10px;
+  margin: 2px;
   border: none;
   outline: none;
   background: #fdf7f7;
   border-bottom: 1px solid #dbd8d7;
   color: #979493;
+}
+
+#FirstName, 
+#LastName {
+  display: block;
+  max-width: 40%;
 }
 
 textarea {
@@ -445,6 +453,8 @@ textarea {
   }
 
   .submitButton {
+    width: 20%;
+    padding: 2px;
     margin: 20px 0 !important;
   }
 }
